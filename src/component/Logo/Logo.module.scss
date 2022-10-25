@@ -1,0 +1,16 @@
+@import '../../styles/_mixins';
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    cursor: pointer;
+
+    @include tablet {
+        cursor: auto;
+    }
+
+    .logo__icon {}
+
+    .logo__text {}
+}

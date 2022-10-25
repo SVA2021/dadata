@@ -12,7 +12,7 @@ body {
 	font-family: $font-text;
 	scroll-behavior: smooth;
 	overflow-x: hidden;
-	
+
 	::-webkit-scrollbar {
 		width: 3px;
 	}
@@ -39,6 +39,7 @@ a {
 .container {
 	width: $mq-xs;
 	margin: 0 auto;
+	padding-top: 80px;
 
 	@include tablet {
 		width: $mq-sm;

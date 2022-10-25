@@ -1,8 +1,10 @@
 import React from 'react';
+import {Header} from './component/Header';
 
 const App = () => {
   return (
     <div className="container">
+      <Header />
       Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit provident vero tempora delectus accusantium, a alias laborum tempore explicabo iusto. Quae consequatur ipsa in maxime provident reiciendis eius voluptatem numquam!
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas rem corporis et animi quos, eos dignissimos aliquam obcaecati at sit. Natus fugiat aliquid quaerat expedita possimus ea recusandae, cumque minima.
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt veritatis vero facere voluptates, pariatur totam laborum sed reprehenderit provident. In expedita doloremque mollitia nisi unde facilis delectus voluptatibus hic voluptate?
