@@ -1,0 +1,40 @@
+@import '../../styles/_variables';
+@import '../../styles/_mixins';
+
+.menu {
+    display: none;
+    color: #1C1C1E;
+
+    @include tablet {
+        display: block;
+        width: 300px;
+        padding: 24px 20px 24px 32px;
+        box-shadow: 0px 0px 5px rgba(2, 0, 96, 0.25);
+    }
+}
+
+.menu__title {
+    font-weight: 700;
+}
+
+.menu__body {
+    display: flex;
+    flex-direction: column;
+    margin-top: 32px;
+}
+
+.menu__btn {
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    font-weight: 600;
+    font-size: 20px;
+
+    svg {
+        width: 32px;
+    }
+
+    span {
+        margin-left: 16px;
+    }
+}
