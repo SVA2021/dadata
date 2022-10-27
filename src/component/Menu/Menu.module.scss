@@ -4,8 +4,9 @@
 .menu {
     display: none;
     color: #1C1C1E;
-
+    
     @include tablet {
+        flex: 1 0 auto;
         display: block;
         width: 300px;
         padding: 24px 20px 24px 32px;
