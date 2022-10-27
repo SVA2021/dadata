@@ -11,24 +11,13 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-
-      - uses: actions/setup-node@v1
+      - uses: borales/actions-yarn@v3.0.0
         with:
-          node-version: '16.x'
-
-      - uses: actions/cache@v2
+          cmd: install # will run `yarn install` command
+      - uses: borales/actions-yarn@v3.0.0
         with:
-          path: ~/.npm
-          key: |
-            r1/${{ runner.os }}/npm/${{ hashFiles('**/yarn.lock') }}
-          restore-keys: |
-            r1/${{ runner.os }}/npm/
-
-      - run: yarn ci --legacy-peer-deps
-      # - run: npm ci --legacy-peer-deps
-      # - run: CI=false npm run build
-      - run: CI=false yarn run build
-
+          cmd: build # will run `yarn build` command
+          
       - uses: peaceiris/actions-gh-pages@v3
         with:
           deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
