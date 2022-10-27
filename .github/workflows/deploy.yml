@@ -24,8 +24,10 @@ jobs:
           restore-keys: |
             r1/${{ runner.os }}/npm/
 
-      - run: npm ci --legacy-peer-deps
-      - run: CI=false npm run build
+      - run: yarn ci --legacy-peer-deps
+      # - run: npm ci --legacy-peer-deps
+      # - run: CI=false npm run build
+      - run: CI=false yarn run build
 
       - uses: peaceiris/actions-gh-pages@v3
         with:
