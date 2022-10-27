@@ -20,7 +20,7 @@ jobs:
         with:
           path: ~/.npm
           key: |
-            r1/${{ runner.os }}/npm/${{ hashFiles('**/package-lock.json') }}
+            r1/${{ runner.os }}/npm/${{ hashFiles('**/yarn.lock') }}
           restore-keys: |
             r1/${{ runner.os }}/npm/
 
